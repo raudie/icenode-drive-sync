@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IceNode Drive Sync</title><link rel="stylesheet" href="style.css"></head><body><main>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav>
+<h1>IceNode Drive Sync</h1>
+<p class="muted">A small internal tool for a research team's field instrument.</p>
+<p>IceNode Drive Sync copies data files from the team's ground station computer to the team's own Google Drive folder.
+The files are instrument downlinks (sensor logs, telemetry and camera images) from an under-ice research vehicle and its
+surface station. The tool runs unattended on the ground station using <a href="https://rclone.org/">rclone</a>, and
+uploads each new batch of files as it arrives, so the team can reach them from anywhere.</p>
+<h2>Who uses it</h2>
+<p>Only the research team, signed in with the team's own Google account. It is not offered to the public, and it does not
+ask anyone else to sign in.</p>
+<h2>What it does with Google Drive</h2>
+<ul><li>Creates folders and uploads files in the team's data folder.</li>
+<li>Lists that folder, to skip files that are already there.</li></ul>
+<p>It does not read, change or share any other files.</p>
+<p><a href="privacy.html">Privacy policy</a></p>
+</main></body></html>
